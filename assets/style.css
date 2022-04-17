@@ -1,0 +1,272 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* aplicando gradiente */
+.fondo{
+ background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);;
+ 
+  padding: auto;
+}
+
+.titulo, .subtitulo {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.titulo {
+ font-family:'Montserrat', sans-serif;
+ font-size: 36px;
+ padding-top: 3rem;
+}
+
+.titulo > a {
+  text-decoration: none;
+}
+
+.subtitulo {
+  font-family: 'Hurricane', cursive;
+  color: rgb(76, 134, 95);
+  font-size: 24px;
+  letter-spacing: 5px;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  color: #6773CE;
+}
+
+h1, h2, h3, h4, h6,  p, table {
+font-family: 'Montserrat', sans-serif;
+color: #000;
+}
+
+.center{
+  text-align: center;
+  background-color: rgb(232, 211, 195);
+  padding: 15px;
+  padding-bottom: 90px;
+  height: 100%;
+}
+
+.justify{
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.tabla{
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: rgb(240, 224, 224);
+  display: inline;
+  margin: 0;
+  padding: 6px ;
+  text-decoration: none;
+  background-size: cover;
+  font-family:'Montserrat', sans-serif;;;
+  letter-spacing: 2px;
+  background-color: #000;
+  border-radius: 3px;
+}
+
+.tamañoImagen{
+ border-image: space;
+}
+/* slider pagina index con animacion y bootstrap*/
+.slider {
+  width: 100%;
+  height: 500px;
+  background: no-repeat contain scroll;
+  animation-delay: 2s;
+}
+
+.slider > ul {
+  display: flex;
+  animation-name: cambio ;
+  animation: cambio 20s infinite;
+  width: 100%;
+}
+
+.slider > ul > li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider > ul > li > div {
+  box-sizing: border-box;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+/* pagina de nosotros */
+
+.imgNos{
+  width: 45%;
+  margin: 10px;
+
+}
+
+/* estilos de la galeria de proyectos*/
+
+.galleryContainer{
+display: grid;
+width: 100%;
+padding: 5px;  
+grid-template-columns: repeat(3,1fr);
+
+justify-items: center;
+}
+
+.galleryItem{
+flex: 25%;
+padding: 6px;
+margin: 6px;
+}
+
+.imgPro{
+display: flex;
+margin-top: 5px;
+width: 100%;
+border: 2px solid rgba(4, 20, 10, 0.887);
+object-fit: cover;
+}
+
+/* responsive galeria */
+@media screen and (min-width: 720px ){
+.galleryContainer{
+  float: inline-start;
+}
+ .vidPro{
+   
+    flex: 100%;
+  }
+}
+@media (max-width: 600px){
+  .column{
+      flex: 100%;
+  }
+  .vidPro{
+    flex: 100%;
+  }
+  .fondo > nav > ul {
+    text-align: center;
+  }
+  .fondo > nav > ul > li {
+    width: 90%;
+    text-align: center;
+  }
+  .fondo > nav > ul > li > a {
+    display: block;
+    margin-bottom: 3px;
+  } 
+}
+
+.vidPro{
+width: 50%;
+display: inline-block;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 90%;
+  margin: 0.5rem;
+}
+
+.formulario input {
+  height: 30px;
+}
+
+.formulario button {
+  padding: 0.5 em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+  cursor: pointer;
+}
+
+.centerContac{
+  background-image: url(../imagenes/fondoContacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+  height: 100%;
+}
+
+.centerContac > p {
+  margin-bottom: 2rem;
+}
+
+.item{
+  display: inline-block;
+  margin: 5 px;
+  padding: 10px;
+}
+/* atributos del footer */
+.contenedor {
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid: gap 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+
+.item1,
+.item2,
+.item3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
