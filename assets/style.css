@@ -91,7 +91,7 @@ nav ul li a {
  border-image: space;
 }
 /* slider pagina index con animacion y bootstrap*/
-.slider {
+/* .slider {
   width: 100%;
   height: 500px;
   background: no-repeat contain scroll;
@@ -114,9 +114,9 @@ nav ul li a {
   box-sizing: border-box;
   background-size: cover;
   overflow: hidden;
-}
+} */
 
-@keyframes cambio {
+/* @keyframes cambio {
   0% {margin-left: 0;}
   20% {margin-left: 0;}
   
@@ -128,7 +128,7 @@ nav ul li a {
   
   75%{margin-left: -300%;}
   100%{margin-left: -300%;}
-}
+} */
 
 /* pagina de nosotros */
 
