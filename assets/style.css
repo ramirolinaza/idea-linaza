@@ -60,7 +60,11 @@ ul {
 }
 
 .tabla{
-  margin: 0 auto;
+  margin:  auto;
+  padding: 40px;
+}
+.fontSize{
+font-size: 25px;
 }
 
 nav ul {
@@ -90,45 +94,7 @@ nav ul li a {
 .tamañoImagen{
  border-image: space;
 }
-/* slider pagina index con animacion y bootstrap*/
-/* .slider {
-  width: 100%;
-  height: 500px;
-  background: no-repeat contain scroll;
-  animation-delay: 2s;
-}
 
-.slider > ul {
-  display: flex;
-  animation-name: cambio ;
-  animation: cambio 20s infinite;
-  width: 100%;
-}
-
-.slider > ul > li {
-  width: 100%;
-  list-style: none;
-}
-
-.slider > ul > li > div {
-  box-sizing: border-box;
-  background-size: cover;
-  overflow: hidden;
-} */
-
-/* @keyframes cambio {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-  
-  25%{margin-left: -100%;}
-  45%{margin-left: -100%;}
-
-  50%{margin-left: -200%;}
-  70%{margin-left: -200%;}
-  
-  75%{margin-left: -300%;}
-  100%{margin-left: -300%;}
-} */
 
 /* pagina de nosotros */
 
@@ -140,29 +106,15 @@ nav ul li a {
 
 /* estilos de la galeria de proyectos*/
 
-.galleryContainer{
-display: grid;
-width: 100%;
-padding: 5px;  
-grid-template-columns: repeat(3,1fr);
-
-justify-items: center;
+/* se reemplaza por galeria bootstrap */
+#galeria img{
+  width: 100%;
+  height: 350px;
+  margin: 5px;
 }
-
-.galleryItem{
-flex: 25%;
-padding: 6px;
-margin: 6px;
+#galeria img:hover {
+  border: 6px solid #f7f7f7;
 }
-
-.imgPro{
-display: flex;
-margin-top: 5px;
-width: 100%;
-border: 2px solid rgba(4, 20, 10, 0.887);
-object-fit: cover;
-}
-
 /* responsive galeria */
 @media screen and (min-width: 720px ){
 .galleryContainer{
