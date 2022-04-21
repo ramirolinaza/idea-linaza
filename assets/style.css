@@ -6,8 +6,10 @@
 }
 /* aplicando gradiente */
 .fondo{
- background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);;
+
+  background-image: linear-gradient(to right, #2C3E50 0%, #233149 100%);
  
+  
   padding: auto;
 }
 
@@ -66,31 +68,38 @@ ul {
 .fontSize{
 font-size: 25px;
 }
+/* navbar bootstrap */
+.navbar-nav{
+ display: inline block;
+  justify-content: end;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
- text-align: right;
+}
+.nav-item{
+ 
+  font-family:'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  
+  border: radius 3px; 
 }
 
-nav ul li {
-  display: inline-block;
-}
 
-nav ul li a {
-  color: rgb(240, 224, 224);
-  display: inline;
+.nav-item{
+  display: inline block;
+ 
+  justify-content: end;
   margin: 0;
   padding: 6px ;
   text-decoration: none;
-  background-size: cover;
-  font-family:'Montserrat', sans-serif;;;
-  letter-spacing: 2px;
+
+  font-family:'Montserrat', sans-serif;
+  letter-spacing: 4px;
   background-color: #000;
+  
   border-radius: 3px;
 }
-
 .tamañoImagen{
  border-image: space;
 }
@@ -124,6 +133,7 @@ nav ul li a {
    
     flex: 100%;
   }
+
 }
 @media (max-width: 600px){
   .column{
@@ -150,16 +160,7 @@ width: 50%;
 display: inline-block;
 }
 
-.formulario {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-}
+
 
 .formulario input,
 .formulario textarea {
@@ -171,25 +172,17 @@ display: inline-block;
   height: 30px;
 }
 
-.formulario button {
-  padding: 0.5 em 1em;
-  border: none;
-  background: rgb(100, 200, 255);
-  cursor: pointer;
-}
 
 .centerContac{
   background-image: url(../imagenes/fondoContacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 15px;
+  padding: 52px;
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.centerContac > p {
-  margin-bottom: 2rem;
-}
 
 .item{
   display: inline-block;
@@ -198,7 +191,7 @@ display: inline-block;
 }
 /* atributos del footer */
 .contenedor {
-  position: fixed;
+  position: relative;
   bottom: 0;
   display: grid;
   grid: gap 20px;
@@ -206,8 +199,10 @@ display: inline-block;
   width: 100%;
   height: 90px;
   text-align: center;
-  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+
+  background-image: linear-gradient(to top, #2C3E50 0%, #233140 100%);
 }
+
 
 .item1,
 .item2,
