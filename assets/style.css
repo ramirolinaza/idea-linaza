@@ -1,12 +1,16 @@
+@charset "UTF-8";
 /* reset */
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 /* aplicando gradiente */
-.fondo{
- background-image: linear-gradient(to right, #2C3E50 0%, #233149 100%);
+.fondo {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2C3E50), to(#233149));
+  background-image: linear-gradient(to right, #2C3E50 0%, #233149 100%);
   padding: auto;
 }
 
@@ -14,11 +18,12 @@
   text-align: center;
   padding: 1rem 2rem;
 }
+
 /* atributos del titulo */
 .titulo {
- font-family:'Montserrat', sans-serif;
- font-size: 36px;
- padding-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  padding-top: 3rem;
 }
 
 .titulo > a {
@@ -27,10 +32,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .subtitulo {
   font-family: 'Hurricane', cursive;
-  color: rgb(76, 134, 95);
+  color: #4c865f;
   font-size: 24px;
   letter-spacing: 5px;
   padding-bottom: 3rem;
@@ -40,33 +44,35 @@ h2 {
   color: #6773CE;
 }
 
-h1, h2, h3, h4, h6,  p, table {
-font-family: 'Montserrat', sans-serif;
-color: #000;
+h1, h2, h3, h4, h6, p, table {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
 }
-/* estilos para pagina de desarrollos */
 
-.clasDes{
+/* estilos para pagina de desarrollos */
+.clasDes {
   font-size: 20px;
-  font-family:'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   margin: 15px;
   text-align: center;
 }
-.caracDes{
+
+.caracDes {
   font-size: 17px;
   padding: 5px;
   margin: 15px;
   text-align: center;
 }
 
-.descriptionDes{
+.descriptionDes {
   font-size: 14px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
-.center{
+
+.center {
   text-align: center;
-  background-color: rgb(232, 211, 195);
+  background-color: #e8d3c3;
   padding: 15px;
   padding-bottom: 90px;
   height: 100%;
@@ -77,82 +83,90 @@ ul {
   list-style-type: none;
 }
 
-.tabla{
-  margin:  auto;
+.tabla {
+  margin: auto;
   padding: 40px;
 }
-.fontSize{
-font-size: 25px;
+
+.fontSize {
+  font-size: 25px;
 }
+
 /* navbar bootstrap */
-.navbar-nav{
- display: inline block;
-  justify-content: end;
-  text-decoration: none;
-  background-color: rgb(0, 0, 0);
-  
-}
-.nav-item{
-  font-family:'Montserrat', sans-serif;
-  letter-spacing: 2px;
-   border: radius 3px; 
-}
-
-
-.nav-item{
+.navbar-nav {
   display: inline block;
- 
-  justify-content: end;
-  margin: 0;
-  padding: 6px ;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   text-decoration: none;
+  background-color: black;
+}
 
-  font-family:'Montserrat', sans-serif;
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  border: radius 3px;
+}
+
+.nav-item {
+  display: inline block;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0;
+  padding: 6px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 4px;
   background-color: #000;
-  
   border-radius: 3px;
 }
-.tamañoImagen{
- border-image: space;
+
+.tamañoImagen {
+  -o-border-image: space;
+     border-image: space;
 }
 
-
 /* pagina de nosotros */
-
-.imgNos{
+.imgNos {
   width: 45%;
   margin: 10px;
 }
 
 /* estilos de la galeria de proyectos*/
-
 /* se reemplaza por galeria bootstrap */
-#galeria img{
+#galeria img {
   width: 100%;
   height: 350px;
   margin: 5px;
 }
+
 #galeria img:hover {
   border: 6px solid #f7f7f7;
 }
-/* responsive galeria */
-@media screen and (min-width: 720px ){
-.galleryContainer{
-  float: inline-start;
-}
- .vidPro{
-   
-    flex: 100%;
-  }
 
-}
-@media (max-width: 600px){
-  .column{
-      flex: 100%;
+/* responsive galeria */
+@media screen and (min-width: 720px) {
+  .galleryContainer {
+    float: inline-start;
   }
-  .vidPro{
-    flex: 100%;
+  .vidPro {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .vidPro {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
   .fondo > nav > ul {
     text-align: center;
@@ -164,16 +178,16 @@ font-size: 25px;
   .fondo > nav > ul > li > a {
     display: block;
     margin-bottom: 3px;
-  } 
+  }
 }
+
 /* video de pagina de proyectos */
-.vidPro{
-width: 35%;
-display: inline-block;
+.vidPro {
+  width: 35%;
+  display: inline-block;
 }
 
 /* pagina de contacto */
-
 .formulario input,
 .formulario textarea {
   width: 90%;
@@ -184,8 +198,7 @@ display: inline-block;
   height: 30px;
 }
 
-
-.centerContac{
+.centerContac {
   background-image: url(../imagenes/fondoContacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,45 +208,66 @@ display: inline-block;
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 /* atributos del footer */
-.bg-dark text-center text-white{
-background-image: linear-gradient(to top, #2C3E50 0%, #233140 100%);
-font-family: 'Montserrat', sans-serif;
-overflow: hidden;
-
+.bg-dark text-center text-white {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2C3E50), to(#233140));
+  background-image: linear-gradient(to top, #2C3E50 0%, #233140 100%);
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
+
 /* animacion en footer */
-.line-1{
-  
-    position: relative;
-    top: 50%;  
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  -webkit-animation: typewriter 2s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 2s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
     width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-    
+  }
 }
 
-
-.anim-typewriter{
-  animation: typewriter 2s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
 }
 
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 
-
-
-
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/*# sourceMappingURL=style.css.map */
