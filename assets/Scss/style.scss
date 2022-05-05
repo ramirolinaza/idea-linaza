@@ -10,6 +10,11 @@ $colorfondo:linear-gradient(to right, #2C3E50 0%, #233149 100%);
 $color-footer:linear-gradient(to top, #2C3E50 0%, #233140 100%);
 $fuente: 'Montserrat', sans-serif; 
 $bodyfondo: #e8d3c3; 
+$redes: (
+  facebook: blue,
+  instagram: orange,
+  
+);
 header {
   background-image: $colorfondo;
      }
@@ -99,14 +104,16 @@ main {
   font-family: $fuente;
   overflow: hidden;
 }
+
 @mixin fontSize ($size, $weight){
   font-size: $size ;
   font-weight: $weight;
+  font-family: $fuente;
 }
 
 .letrachica {
   @include fontSize(1rem,100 )
-
+  
 }
 
   
